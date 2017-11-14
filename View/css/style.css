@@ -8,12 +8,17 @@ h1 {
     font-size: 28px;
 }
 
-/* Textfält */
-.floral {
+.inputField{
     background-color: floralwhite;
     border-radius: 4px;
     margin: 10px;
     padding: 2px;
+}
+
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
 }
 
 /* Container */
