@@ -8,6 +8,12 @@ h1 {
     font-size: 28px;
 }
 
+label {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+}
+
 .inputField{
     background-color: floralwhite;
     border-radius: 4px;
@@ -15,16 +21,10 @@ h1 {
     padding: 2px;
 }
 
-label {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-}
-
 /* Container */
 .border {
     width: 500px;
-    
+
 	background-color: #e6e6ff;
     border: 1px solid black;
     padding: 20px;
@@ -36,6 +36,7 @@ label {
 /* Buttons */
 .btn {
     margin: 25px 0px 10px 0px;
+    height: 35px;
 }
 
 /* Images */
