@@ -1,1 +1,2 @@
-# Skeleton project for Swagger
+# ltuRegisterGradeAssignment
+Group ELO's school assignment about web services.
