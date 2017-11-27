@@ -1,23 +1,19 @@
 {
-  "name": "ltuRegisterGradeAssignment",
-  "version": "0.0.1",
-  "private": true,
-  "description": "New Swagger API Project",
-  "keywords": [],
+  "name": "expressninja",
+  "version": "1.0.0",
+  "description": "Express Ninja Tutorial.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "author": "",
-  "license": "",
-  "main": "app.js",
+  "license": "ISC",
   "dependencies": {
-    "hapi": "^10.0.0",
-    "inert": "^5.0.1",
-    "swagger-hapi": "^0.1.0"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^4.13.4"
   },
   "devDependencies": {
-    "should": "^7.1.0",
-    "supertest": "^1.0.0"
-  },
-  "scripts": {
-    "start": "node app.js",
-    "test": "swagger project test"
+    "nodemon": "^1.12.1"
   }
 }
