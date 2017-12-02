@@ -3,27 +3,27 @@ const router = express.Router();
 const Student = require('../models/student');
 const ProvTillfalle = require('../models/provTillfalle');
 
-//get a list of provTillfallen from the db
+//Hämtar en lista över provTillfallen från db
 router.get('/provtillfallen', function(req, res, next){
     ProvTillfalle.find({}).then(function(provTillfallen){
         res.send(provTillfallen);
     });
 });
 
-//add a new provTillfalle to the db
+//Lägger till ett provTillfalle till db
 router.post('/provtillfallen', function(req, res, next){
     ProvTillfalle.create(req.body).then(function(provTillfalle){
         res.send(provTillfalle);
     }).catch(next);
 });
-//update a provTillfalle in the db
+//Uppdaterar ett provTillfalle i db
 router.put('/provtillfallen/:id', function(req, res, next){
     ProvTillfalle.findByIdAndUpdate({_id: req.params.id}, req.body, {new:true}).then(function(provTillfalle){
         res.send(provTillfalle);
-    })
+    });
 });
 
-//delete a provTillfalle from the db
+//Tar bort provTillfalle från db
 router.delete('/provtillfallen/:id', function(req, res, next){
     Student.findByIdAndRemove({_id: req.params.id}).then(function(student){
         res.send(student);
