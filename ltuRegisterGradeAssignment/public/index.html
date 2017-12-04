@@ -1,12 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Registrera betyg</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Oskar, Erica & Lina">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href='https://fonts.googleapis.com/css?family=Aclonica' rel='stylesheet'>
 </head>
+
 <body>
-    <h1>Ninja Go!</h1>
+    <div class="border">
+        <image src="images/ladok.png" id="ladok"/>
+        <h1>Registrera betyg</h1>
+        <form action="">
+            <label for="studentId">Student-ID</label>
+            <input type="text" class="inputField" id="studentId"><br>
+
+            <label for="kursKod">Kurskod</label>
+            <input type="text" class="inputField" id="kursKod"><br>
+
+            <label for="provKod">Provkod</label>
+            <input type="text" class="inputField" id="provKod"><br>
+
+            <label for="vg">Väl Godkänt</label>
+            <input type="radio" name="rbGrades" class="inputField" id="vg" value="Väl Godkänt"><br>
+
+            <label for="g">Godkänt</label>
+            <input type="radio" name="rbGrades" class="inputField" id="g" value="Godkänt" checked><br>
+
+            <label for="u">Underkänt</label>
+            <input type="radio" name="rbGrades" class="inputField" id="u" value="Underkänt"><br>
+
+            <input type="submit" value="Registrera betyg" class="btn">
+        </form>
+    </div>
+
+
+    <!-- Load JS after page has parsed -->
+
 </body>
 </html>

@@ -9,6 +9,11 @@ const app = express();
 mongoose.connect('mongodb://localhost/studentprovdb', {useMongoClient: true});
 mongoose.Promise = global.Promise;
 
+//Middleware
+//Serving static files
+app.use(express.static('public'));
+
+//Parsing JSON
 app.use(bodyParser.json());
 
 //init routes
@@ -21,6 +26,6 @@ app.use(function(err, req, res, next){
 
 //listen for requests
 app.listen(process.env.port || 4000, function(){
-    console.log('Hello world! im listening!');
+    console.log('im listening!');
 });
 
