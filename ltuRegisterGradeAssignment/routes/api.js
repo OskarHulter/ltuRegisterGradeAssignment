@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Student = require('../models/student');
+//const Student = require('../models/student');
 const ProvTillfalle = require('../models/provTillfalle');
 
 //Hämtar en lista över provTillfallen från db
@@ -30,7 +30,7 @@ router.delete('/provtillfallen/:id', function(req, res, next){
     });
 });
 
-
+/*
 //get a list of students from the db
 router.get('/students', function(req, res, next){
     Student.find({}).then(function(students){
@@ -57,5 +57,5 @@ router.delete('/students/:id', function(req, res, next){
         res.send(student);
     });
 });
-
+*/
 module.exports = router;

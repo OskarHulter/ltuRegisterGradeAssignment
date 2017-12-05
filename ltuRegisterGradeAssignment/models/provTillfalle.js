@@ -1,8 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-//testing this
-
 // Skapar provtillfällens schema och model 
 const ProvTillfalleSchema = new Schema({
     kurs: {
