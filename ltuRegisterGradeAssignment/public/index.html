@@ -13,35 +13,40 @@
     <div class="border">
         <image src="images/ladok.png" id="ladok" />
         <h1>Registrera betyg</h1>
-        <form action="">
+        <form id="betyg-form">
+            <!--
             <label for="studentId">Student-ID</label>
             <input type="text" class="inputField" id="studentId">
             <br>
 
             <label for="kursKod">Kurskod</label>
-            <input type="text" class="inputField" id="kursKod">
+            <input type="text" class="inputField" id="kursKod" name="kursKod">
             <br>
 
             <label for="provKod">Provkod</label>
             <input type="text" class="inputField" id="provKod">
             <br>
+            -->
+            <label for="provTillfalle"> Provtillfällets ID</label>
+            <input type="text" class="inputField" id="provTillfalle" name="provTillfalleId">
+            <br>
 
             <label for="vg">Väl Godkänt</label>
-            <input type="radio" name="rbGrades" class="inputField" id="vg" value="Väl Godkänt">
+            <input type="radio" name="rbGrades" class="inputField" id="vg" value="VG">
             <br>
 
             <label for="g">Godkänt</label>
-            <input type="radio" name="rbGrades" class="inputField" id="g" value="Godkänt" checked>
+            <input type="radio" name="rbGrades" class="inputField" id="g" value="G" checked>
             <br>
 
             <label for="u">Underkänt</label>
-            <input type="radio" name="rbGrades" class="inputField" id="u" value="Underkänt">
+            <input type="radio" name="rbGrades" class="inputField" id="u" value="U">
             <br>
 
             <input type="submit" value="Registrera betyg" class="btn">
         </form>
     </div>
-
+    <div id="betyg-resultat"></div>
     <button id="btn">Hämta fler prov att betygsätta</button>
     <div id="provtillfallen-info"></div>
 
