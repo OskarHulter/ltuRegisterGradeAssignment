@@ -1,7 +1,7 @@
 {
   "name": "expressninja",
   "version": "1.0.0",
-  "description": "Express Ninja Tutorial.",
+  "description": "LTU register grade app.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
