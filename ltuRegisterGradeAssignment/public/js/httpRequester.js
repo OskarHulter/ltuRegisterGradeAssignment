@@ -27,17 +27,3 @@ function renderHTML(data) {
 
     provtillfalleContainer.insertAdjacentHTML('beforeend', htmlString);
 };
-
-
-
-
-
-// Saved for learning purposes
-//request.addEventListener("readystatechange", processRequest, false);
-//Old version of request handling using readyState
-/* function processRequest(e){
-    if (request.readyState == 4 && request.status == 200) {
-        let response = JSON.parse(request.responseText);
-        alert(request.responseText);
-    }
-}*/
