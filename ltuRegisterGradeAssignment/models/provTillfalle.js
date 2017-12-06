@@ -9,10 +9,11 @@ const ProvTillfalleSchema = new Schema({
         provKod: String
     },
     kurs: {
-        namn: String,
-        kursKod: String
+        kursKod: String,
+        namn: String 
     }, 
     student: {
+        studentId: String,
         namn: String,
         pnr: Number
     },
