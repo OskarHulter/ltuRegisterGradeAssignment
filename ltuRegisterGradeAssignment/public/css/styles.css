@@ -1,5 +1,4 @@
 body {
-
     font-family: ‘Arial Rounded MT Bold’, Helvetica, Arial, sans-serif;
 }
 
@@ -10,7 +9,7 @@ h1 {
 
 label {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     text-align: right;
 }
 
@@ -24,7 +23,6 @@ label {
 /* Container */
 .border {
     width: 500px;
-
 	background-color: #e6e6ff;
     border: 1px solid black;
     padding: 20px;
