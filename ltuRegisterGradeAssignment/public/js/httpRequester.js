@@ -23,7 +23,7 @@ form.onsubmit = function (e) {
         "betygsatt": betygsatt
     }));
 
-    betygResultat.innerHTML = 'Du gav ett betyg!' + form.rbGrades.value;
+    betygResultat.innerHTML = 'Du gav betyget ' + form.rbGrades.value;
     form.reset();
     getProvListaUtanBetyg();
 }
