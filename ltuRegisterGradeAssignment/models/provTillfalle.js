@@ -18,7 +18,8 @@ const ProvTillfalleSchema = new Schema({
         pnr: Number
     },
     betyg: {
-        type: String
+        type: String,
+        default: " "
     },
     betygsatt: {
         type: Boolean,
