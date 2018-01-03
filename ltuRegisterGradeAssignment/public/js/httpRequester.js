@@ -1,5 +1,6 @@
 const provtillfalleContainer = document.getElementById("provtillfallen-info");
 const btn = document.getElementById("btn");
+const messageButton = document.getElementById("messageCreateButton");
 const form = document.getElementById("betyg-form");
 const betygResultat = document.getElementById("betyg-resultat");
 
@@ -35,6 +36,20 @@ btn.addEventListener("click", function () {
 function getProvListaUtanBetyg() {
     let request = new XMLHttpRequest();
     request.open('GET', "http://localhost:4000/api/provtillfallen", true);
+    request.onload = function () {
+        let responseData = JSON.parse(request.responseText);
+        renderHTML(responseData);
+    };
+    request.send();
+}
+
+messageButton.addEventListener("click", function () {
+    skapaMeddelande();
+});
+
+function skapaMeddelande() {
+    let request = new XMLHttpRequest();
+    request.open('GET', "http://localhost:4000/api/meddelande", true);
     request.onload = function () {
         let responseData = JSON.parse(request.responseText);
         renderHTML(responseData);
