@@ -7,13 +7,11 @@ const Worker = require('../messaging/worker');
 //Kö till rabbitMQ
 const queue = 'queue';
 
-
 //Hämtar en lista över provTillfallen från db
 router.get('/provtillfallen', function (req, res, next) {
     ProvTillfalle.find({}).then(function (provTillfallen) {
         res.send(provTillfallen);
 
-        //var msg = JSON.stringify(provTillfallen);
         //Skickar rabbitMQ meddelande
         Channel(queue, function (err, channel, conn) {
             if (err) {
@@ -32,7 +30,6 @@ router.get('/provtillfallen', function (req, res, next) {
                 });
             }
         });
-
         //Gör en string av JSON-data
         function encode(doc) {
             return new Buffer(JSON.stringify(doc));

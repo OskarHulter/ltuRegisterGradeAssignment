@@ -1,6 +1,6 @@
 const amqp = require('amqplib/callback_api');
 
-//Använder en environment variable eller default värden för login.
+//Bör använda en environment variable istället för default värde.
 const url = 'amqp://guest:guest@localhost:5672';
 
 module.exports = createQueueChannel;
